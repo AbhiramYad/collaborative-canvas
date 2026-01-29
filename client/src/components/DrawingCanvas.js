@@ -125,6 +125,7 @@ function DrawingCanvas({ roomData, onLeave }) {
         socketRef.current.disconnect();
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [roomData]);
 
   // Redraw canvas with all history and ghost cursors
