@@ -6,7 +6,7 @@
     "dev": "concurrently \"npm run server\" \"npm run client\"",
     "server": "node server/server.js",
     "client": "cd client && npm start",
-    "start": "npm run dev"
+    "start": "node server/server.js"
   },
   "devDependencies": {
     "concurrently": "^8.2.0"
