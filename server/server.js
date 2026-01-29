@@ -7,7 +7,9 @@ const app = express();
 const server = http.createServer(app);
 
 // Configure allowed origins for production
-const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000,http://localhost:5000').split(',');
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:3000,http://localhost:5000')
+  .split(',')
+  .map(origin => origin.trim());
 
 const io = socketIO(server, {
   cors: {
