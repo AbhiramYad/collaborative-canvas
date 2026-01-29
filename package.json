@@ -1,0 +1,14 @@
+{
+  "name": "collaborative-canvas",
+  "version": "1.0.0",
+  "description": "Real-time collaborative drawing canvas",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "node server/server.js",
+    "client": "cd client && npm start",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
