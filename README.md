@@ -138,22 +138,24 @@ collaborative-canvas/
 - [ ] Keyboard shortcuts
 - [ ] Drawing export (PNG/SVG)
 
-## 🧪 Testing with Multiple Users
+## 🚀 Using the Deployed Application
 
-### Test Locally
-1. Start the server: `npm run server`
-2. Open multiple browser windows/tabs
-3. In first window, join room `test-room` as `Alice`
-4. In second window, join same room as `Bob`
-5. Draw in one window, see it appear in the other instantly
+### Accessing the Live Application
+1. Open your browser and navigate to the deployed URL (provided by your hosting platform)
+2. You will be redirected to the application interface
+3. The application is fully functional at the deployed endpoint
 
-### Test on Different Machines
-1. Note your computer's local IP (e.g., `192.168.x.x`)
-2. Update the socket connection in `DrawingCanvas.js`:
-   ```javascript
-   socketRef.current = io('http://YOUR_IP:5000');
-   ```
-3. On other machines, visit `http://YOUR_IP:3000`
+### Inviting Others to Collaborate
+1. Share the deployed application URL with collaborators
+2. Each user opens the URL in their browser
+3. Users can join the same room by entering the same Room ID
+4. Start drawing together in real-time
+
+### Multi-Device Collaboration
+1. Visit the deployed URL from any device with a browser
+2. Enter the Room ID to join the same session
+3. The socket connection automatically points to the deployed server
+4. All devices will see drawings in real-time
 
 ## 📊 Performance Notes
 
@@ -222,4 +224,4 @@ For issues or questions, check the ARCHITECTURE.md file for detailed technical d
 
 ---
 
-**Built with ❤️ for collaborative creativity**
+**Built with  for collaborative creativity**
