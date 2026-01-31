@@ -31,7 +31,7 @@ function DrawingCanvas({ roomData, onLeave }) {
     canvas.height = rect.height;
 
     // Initialize socket connection
-    const apiUrl = process.env.REACT_APP_API_URL || 'http://localhost:5000';
+    const apiUrl = process.env.REACT_APP_API_URL ;
     socketRef.current = io(apiUrl);
 
     socketRef.current.on('connect', () => {
