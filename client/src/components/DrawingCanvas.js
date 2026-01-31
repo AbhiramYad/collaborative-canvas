@@ -30,7 +30,7 @@ function DrawingCanvas({ roomData, onLeave }) {
     canvas.width = rect.width;
     canvas.height = rect.height;
 
-    // Render backend (hardcoded to avoid cache issues)
+    // Render backend
     const apiUrl = "https://collaborative-canvas-dd3c.onrender.com";
 
     console.log("RENDER BUILD ACTIVE");
@@ -108,6 +108,7 @@ function DrawingCanvas({ roomData, onLeave }) {
       if (socketRef.current) socketRef.current.disconnect();
     };
 
+    // eslint-disable-next-line
   }, [roomData]);
 
   // ---------------- CANVAS ----------------
@@ -214,7 +215,7 @@ function DrawingCanvas({ roomData, onLeave }) {
     }
   };
 
-  // ---------------- UI (OLD DESIGN KEPT) ----------------
+  // ---------------- OLD UI ----------------
 
   return (
     <div className="drawing-canvas-container">
