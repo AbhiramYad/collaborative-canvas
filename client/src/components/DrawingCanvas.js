@@ -397,7 +397,9 @@ function DrawingCanvas({ roomData, onLeave }) {
     canvas.height = rect.height;
 
     // Backend URL from Vercel ENV
-    const apiUrl = process.env.REACT_APP_API_URL;
+    const apiUrl = "https://collaborative-canvas-dd3c.onrender.com";
+
+    console.log("RENDER BUILD ACTIVE");
 
     console.log("API URL USED:", apiUrl);
 
