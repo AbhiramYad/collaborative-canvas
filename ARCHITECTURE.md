@@ -7,7 +7,7 @@ This document explains how real-time drawing data flows between users, the WebSo
 
 ---
 
-# 🎯 Drawing Data Flow Explanation
+#  Drawing Data Flow Explanation
 
 1. User draws on the canvas using mouse input
 2. Frontend captures stroke coordinates
