@@ -18,41 +18,7 @@ This document explains how real-time drawing data flows between users, the WebSo
 
 
 ## Flow Diagram
- ┌─────────────────────────┐
- │      User A Browser     │
- │ (Canvas Drawing Action) │
- └───────────┬─────────────┘
-             │
-             │ draw / cursor_move event
-             ▼
- ┌─────────────────────────┐
- │   React Frontend App    │
- │ (Socket.IO Client)      │
- └───────────┬─────────────┘
-             │
-             │ WebSocket Connection
-             ▼
- ┌─────────────────────────┐
- │ Backend Server          │
- │ Node.js + Express       │
- │ Socket.IO Server        │
- └───────────┬─────────────┘
-             │
-             │ Broadcast draw updates
-             ▼
- ┌─────────────────────────┐
- │ Other Connected Clients │
- │ (Frontend Applications) │
- └───────────┬─────────────┘
-             │
-             │ Render stroke on canvas
-             ▼
- ┌─────────────────────────┐
- │ HTML5 Canvas Rendering  │
- │ (Live Visual Update)    │
- └─────────────────────────┘
-
----
+<img width="305" height="737" alt="image" src="https://github.com/user-attachments/assets/648cbf47-e42e-47ce-92b9-15ac61d12257" />
 
 # WebSocket Protocol Design
 
