@@ -15,7 +15,7 @@ Make sure the following are installed:
 
 ## Step 1 — Clone the Repository
 
-git clone https://github.com/YOUR_USERNAME/collaborative-canvas.git
+git clone https://github.com/AbhiramYad/collaborative-canvas.git
 cd collaborative-canvas
 
 ## Step 2 — Run Backend Server

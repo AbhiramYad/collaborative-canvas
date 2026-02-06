@@ -7,7 +7,7 @@ This document explains how real-time drawing data flows between users, the WebSo
 
 ---
 
-# 🎯 Drawing Data Flow Explanation
+#  Drawing Data Flow Explanation
 
 1. User draws on the canvas using mouse input
 2. Frontend captures stroke coordinates
@@ -18,8 +18,7 @@ This document explains how real-time drawing data flows between users, the WebSo
 
 
 ## Flow Diagram
-
----
+<img width="305" height="737" alt="image" src="https://github.com/user-attachments/assets/648cbf47-e42e-47ce-92b9-15ac61d12257" />
 
 # WebSocket Protocol Design
 
